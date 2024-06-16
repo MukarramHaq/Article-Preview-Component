@@ -1,0 +1,97 @@
+:root{
+  /* Primary */
+  --pr-grayish-blue: hsl(212, 23%, 69%);
+  --pr-desaturated-dark-blue: hsl(214, 17%, 51%);
+  --pr-very-dark-grayish-blue: hsl(210, 46%, 95%);
+  --pr-light-grayish-blue: hsl(210, 46%, 95%);
+
+  /* Font weight */
+  --fw-500: 500;
+  --fw-700: 700;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* This removes default margins */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body{
+  padding: 1rem;
+  background-color: var(--pr-light-grayish-blue);
+  font-family: Manrope, sans-serif;
+}
+
+.main{
+  background-color: white;
+}
+
+.second-section{
+  padding: 2rem;
+}
+
+.flow > *:where(:not(:first-child)) {
+  margin-top: 1.3rem;
+}
+
+h3{
+  /* color: var(--pr-desaturated-dark-blue); */
+  color:rgb(69, 69, 69);
+}
+
+p{
+  font-size: 0.9rem;
+  color: var(--pr-desaturated-dark-blue)
+}
+
+.second-description{
+  margin-bottom: 2rem;
+}
+
+.michelle{
+  border-radius: 50%;
+  height: 2.8rem;
+}
+
+.flex-group{
+  display: flex;
+  gap: 1rem;
+  border: 1px solid black;
+  justify-content: space-between;
+}
+
+.inner-flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+.name{
+  font-weight: var(--fw-700);
+}
+
+.icon-div{
+  align-self: center;
+  background-color: var(--pr-light-grayish-blue);
+  border-radius: 50%;
+  padding: 0.6rem;
+}
+
+.share-icon{
+  height: 1rem;
+}
