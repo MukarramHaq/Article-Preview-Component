@@ -51,11 +51,16 @@ body{
 h3{
   /* color: var(--pr-desaturated-dark-blue); */
   color:rgb(69, 69, 69);
+  font-size: 1.3rem;
 }
 
 p{
   font-size: 0.9rem;
   color: var(--pr-desaturated-dark-blue)
+}
+
+.second-description{
+  line-height: 1.5;
 }
 
 .second-description{
@@ -70,7 +75,7 @@ p{
 .flex-group{
   display: flex;
   gap: 1rem;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   justify-content: space-between;
 }
 
@@ -79,10 +84,21 @@ p{
   flex-direction: column;
   justify-content: center;
   gap: 0.2rem;
+  /* border: 1px solid yellow; */
+}
+
+.another-flex{
+  display: flex;
+  gap: 1rem;
 }
 
 .name{
   font-weight: var(--fw-700);
+  color: var(--pr-desaturated-dark-blue)
+}
+
+.date{
+  color: var(--pr-grayish-blue)
 }
 
 .icon-div{
