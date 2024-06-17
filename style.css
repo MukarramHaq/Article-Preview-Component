@@ -16,11 +16,11 @@
   box-sizing: border-box;
 }
 
-img,
+/* img,
 svg{
   display: block;
   max-width: 100%;
-}
+} */
 
 body,
 h1,
@@ -60,24 +60,33 @@ body{
 
 .card{
   /* border: 2px solid red; */
-  max-width: 730px;
+  max-width: 45.625rem;
   display: flex;
-  align-items: stretch;
+  /* align-items: stretch; */
 }
 
 .card-image{
-  max-width: 286px;
+  /* max-width: 17.875rem; */
+  background: url(./images/drawers.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* width: 100%; */
+  width: 17.875rem;
+  aspect-ratio: 16/9;
+  /* border:2px solid yellow; */
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
 }
 
-.card-image img{
+/* .card-image img{
   height: 100%;
   border-top-left-radius: 0.7rem;
   border-bottom-left-radius: 0.7rem;
-}
+} */
 
 .card-content{
   /* border: 2px solid green; */
-  max-width: 446px;
+  max-width: 27.875rem;
   padding: 2.3rem;
   background-color: white;
   border-top-right-radius: 0.7rem;
