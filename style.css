@@ -16,11 +16,11 @@
   box-sizing: border-box;
 }
 
-/* img,
+img,
 svg{
   display: block;
   max-width: 100%;
-} */
+}
 
 body,
 h1,
@@ -54,38 +54,22 @@ body{
   min-height: 100vh;
 }
 
-.container{
-  /* border: 1px solid black; */
-}
-
 .card{
-  /* border: 2px solid red; */
   max-width: 45.625rem;
   display: flex;
-  /* align-items: stretch; */
 }
 
 .card-image{
-  /* max-width: 17.875rem; */
   background: url(./images/drawers.jpg) no-repeat;
-  background-position: center;
+  background-position: left;
   background-size: cover;
-  /* width: 100%; */
   width: 17.875rem;
   aspect-ratio: 16/9;
-  /* border:2px solid yellow; */
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
 }
 
-/* .card-image img{
-  height: 100%;
-  border-top-left-radius: 0.7rem;
-  border-bottom-left-radius: 0.7rem;
-} */
-
 .card-content{
-  /* border: 2px solid green; */
   max-width: 27.875rem;
   padding: 2.3rem;
   background-color: white;
@@ -139,4 +123,22 @@ span{
 
 .share-button img{
   height: 1rem;
+}
+
+@media (max-width: 755px){
+  .card{
+    flex-direction: column;
+  }
+
+  .card-image{
+    width: 100%;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0.5rem;
+  }
+
+  .card-content{
+    width: 100%;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0.5rem;
+  }
 }
