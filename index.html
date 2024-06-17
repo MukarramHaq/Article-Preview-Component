@@ -33,35 +33,37 @@
   Share -->
   </head>
   <body>
-    <main class="main flow">
-      <img
-        alt="green drawers and decorations"
-        src="images/drawers.jpg"
-        style="max-width: 100%"
-      />
-      <div class="second-section flow">
-        <div class="description flow">
-          <h3>
+    <div class="container">
+      <main class="card">
+        <div class="card-image">
+          <img src="images/drawers.jpg" alt="furniture" />
+        </div>
+        <div class="card-content flow">
+          <h2>
             Shift the overall look and feel by adding these wonderful touches to
             furniture in your home
-          </h3>
-          <p class="second-description">
+          </h2>
+          <p>
             Ever been in a room and felt like something was missing? Perhaps it
             felt slightly bare and uninviting. I’ve got some simple tips to help
             you make any room feel complete.
           </p>
-        </div>
-        <div class="flex-group">
-          <div class="another-flex">
-            <img class="michelle" src="images/avatar-michelle.jpg" alt="headshot of Michelle" />
-            <div class="inner-flex">
-              <p class="name">Michelle Appleton</p>
-              <p class="date">28 Jun 2020</p>
+          <div class="card-bottom">
+            <div class="first-flex-group">
+              <img class="michelle" src="images/avatar-michelle.jpg" alt="headshot of Michelle">
+              <div class="flex-group">
+                <h3>Michelle Appleton</h3>
+                <span>29 Jun 2020</span>
+              </div>
+            </div>
+            <div id="share-btn-el" class="share-button">
+              <img src="images/icon-share.svg" alt="share icon">
             </div>
           </div>
-          <div class="icon-div"><img class="share-icon" src="images/icon-share.svg" /></div>
         </div>
-      </div>
-    </main>
+      </main>
+    </div>
+
+    <script src="index.js"></script>
   </body>
 </html>

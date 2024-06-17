@@ -1,11 +1,11 @@
 :root{
-  /* Primary */
+  
   --pr-grayish-blue: hsl(212, 23%, 69%);
   --pr-desaturated-dark-blue: hsl(214, 17%, 51%);
   --pr-very-dark-grayish-blue: hsl(210, 46%, 95%);
   --pr-light-grayish-blue: hsl(210, 46%, 95%);
 
-  /* Font weight */
+  
   --fw-500: 500;
   --fw-700: 700;
 }
@@ -16,7 +16,12 @@
   box-sizing: border-box;
 }
 
-/* This removes default margins */
+img,
+svg{
+  display: block;
+  max-width: 100%;
+}
+
 body,
 h1,
 h2,
@@ -30,84 +35,99 @@ dd {
   margin: 0;
 }
 
-body{
-  padding: 1rem;
-  background-color: var(--pr-light-grayish-blue);
-  font-family: Manrope, sans-serif;
-}
-
-.main{
-  background-color: white;
-}
-
-.second-section{
-  padding: 2rem;
+img,
+svg{
+  display: block;
+  max-width: 100%;
 }
 
 .flow > *:where(:not(:first-child)) {
-  margin-top: 1.3rem;
+  margin-top: 1rem;
 }
 
-h3{
-  /* color: var(--pr-desaturated-dark-blue); */
-  color:rgb(69, 69, 69);
-  font-size: 1.3rem;
+body{
+  padding: 1rem;
+  background-color: var(--pr-very-dark-grayish-blue);
+  font-family: Manrope, sans-serif;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
 }
 
-p{
-  font-size: 0.9rem;
-  color: var(--pr-desaturated-dark-blue)
+.container{
+  /* border: 1px solid black; */
 }
 
-.second-description{
+.card{
+  /* border: 2px solid red; */
+  max-width: 730px;
+  display: flex;
+  align-items: stretch;
+}
+
+.card-image{
+  max-width: 286px;
+}
+
+.card-image img{
+  height: 100%;
+  border-top-left-radius: 0.7rem;
+  border-bottom-left-radius: 0.7rem;
+}
+
+.card-content{
+  /* border: 2px solid green; */
+  max-width: 446px;
+  padding: 2.3rem;
+  background-color: white;
+  border-top-right-radius: 0.7rem;
+  border-bottom-right-radius: 0.7rem;
+}
+
+h2{
+  font-size: 1.25rem;
+}
+
+.card-content p{
+  font-size: 0.875rem;
   line-height: 1.5;
 }
 
-.second-description{
-  margin-bottom: 2rem;
+.michelle{
+  height: 3rem;
+  border-radius: 50%;
 }
 
-.michelle{
-  border-radius: 50%;
-  height: 2.8rem;
+h3,
+span{
+  font-size: 0.875rem;
+}
+
+.first-flex-group{
+  display: flex;
+  gap: 1rem;
 }
 
 .flex-group{
+  align-self: center;
+}
+
+.card-bottom{
   display: flex;
-  gap: 1rem;
-  /* border: 1px solid black; */
   justify-content: space-between;
 }
 
-.inner-flex{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 0.2rem;
-  /* border: 1px solid yellow; */
-}
-
-.another-flex{
-  display: flex;
-  gap: 1rem;
-}
-
-.name{
-  font-weight: var(--fw-700);
-  color: var(--pr-desaturated-dark-blue)
-}
-
-.date{
-  color: var(--pr-grayish-blue)
-}
-
-.icon-div{
+.share-button{
   align-self: center;
   background-color: var(--pr-light-grayish-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
   border-radius: 50%;
-  padding: 0.6rem;
 }
 
-.share-icon{
+.share-button img{
   height: 1rem;
 }
